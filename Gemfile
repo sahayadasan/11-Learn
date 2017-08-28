@@ -29,7 +29,29 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'devise'
+gem 'popper_js'
+gem 'jquery-rails'
+gem 'bootstrap', '~> 4.0.0.beta'
+gem 'font-awesome-sass'
+
 group :development, :test do
+  gem 'pry'
+  gem 'pry-byebug'
+  gem 'pry-rails'
+  gem 'faker'
+  gem 'annotate'
+  gem 'railroady'
+
+  gem 'launchy'
+  gem "guard"
+  gem "guard-rspec"
+  gem 'rails-controller-testing'
+  gem 'database_cleaner'
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'selenium-webdriver'
+
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end

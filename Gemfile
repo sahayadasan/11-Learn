@@ -42,7 +42,6 @@ group :development, :test do
   gem 'faker'
   gem 'annotate'
   gem 'railroady'
-
   gem 'launchy'
   gem "guard"
   gem "guard-rspec"
@@ -51,8 +50,8 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'selenium-webdriver'
-
   gem 'simplecov'
+  gem 'factory_girl_rails'
 
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

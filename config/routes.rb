@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get '/users', to: 'users#index'
   get '/users/edit_role', to: 'users#edit_role'
   put '/users/update_role', to: 'users#update_role'
+  resources :klasses, only: [:index, :new, :create]
 end

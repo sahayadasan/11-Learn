@@ -9,3 +9,7 @@ Klass.create!(name: 'Functional Programming', subject: 'Engineering', level: 420
 Klass.create!(name: 'OOP', subject: 'Engineering', level: 225, credits: 5)
 Klass.create!(name: 'English', subject: 'Humanities', level: 101, credits: 3)
 Klass.create!(name: 'History', subject: 'Humanities', level: 102, credits: 2)
+
+Registration.create!(klass_id: 1, teacher_id: 2, semester: 'Fall', year: 2017, capacity: 100, is_open: true)
+Registration.create!(klass_id: 3, teacher_id: 2, semester: 'Spring', year: 2018, capacity: 50)
+Registration.create!(klass_id: 5, teacher_id: 2, semester: 'Fall', year: 2018, capacity: 75)

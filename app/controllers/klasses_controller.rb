@@ -1,4 +1,6 @@
 class KlassesController < ApplicationController
+  before_action :auth_teacher
+
   def index
     @klasses = Klass.all.order(id: 'asc')
   end

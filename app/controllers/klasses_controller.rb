@@ -3,6 +3,7 @@ class KlassesController < ApplicationController
 
   def index
     @klasses = Klass.all.order(id: 'asc')
+    ap @klasses
   end
 
   def new

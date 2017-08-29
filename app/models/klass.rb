@@ -14,4 +14,5 @@
 class Klass < ApplicationRecord
   validates :name, :subject, :level, :credits, presence: true
   has_many :registrations
+  has_many :sections
 end

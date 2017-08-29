@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170828222531) do
+ActiveRecord::Schema.define(version: 20170829201636) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -37,6 +37,18 @@ ActiveRecord::Schema.define(version: 20170828222531) do
     t.index ["teacher_id"], name: "index_registrations_on_teacher_id"
   end
 
+  create_table "sections", force: :cascade do |t|
+    t.string "title", null: false
+    t.text "content"
+    t.string "azure"
+    t.string "link"
+    t.integer "position", default: 0
+    t.bigint "klass_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["klass_id"], name: "index_sections_on_klass_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -57,4 +69,5 @@ ActiveRecord::Schema.define(version: 20170828222531) do
 
   add_foreign_key "registrations", "klasses"
   add_foreign_key "registrations", "users", column: "teacher_id"
+  add_foreign_key "sections", "klasses"
 end

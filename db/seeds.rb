@@ -13,3 +13,6 @@ Klass.create!(name: 'History', subject: 'Humanities', level: 102, credits: 2)
 Registration.create!(klass_id: 1, teacher_id: 2, semester: 'Fall', year: 2017, capacity: 100, is_open: true)
 Registration.create!(klass_id: 3, teacher_id: 2, semester: 'Spring', year: 2018, capacity: 50)
 Registration.create!(klass_id: 5, teacher_id: 2, semester: 'Fall', year: 2018, capacity: 75)
+
+Section.create!(klass_id: 2, title: 'Newtonian Motion', content: 'todo1', azure: 'microsoft1', link: 'youtube1', position: 0)
+Section.create!(klass_id: 2, title: 'Electric Currents', content: 'todo2', azure: 'microsoft2', link: 'youtube1', position: 1)

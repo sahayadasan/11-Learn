@@ -38,7 +38,7 @@ ActiveRecord::Schema.define(version: 20170829201636) do
   end
 
   create_table "sections", force: :cascade do |t|
-    t.string "title", null: false
+    t.string "title"
     t.text "content"
     t.string "azure"
     t.string "link"

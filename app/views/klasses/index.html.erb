@@ -12,6 +12,7 @@
       <th>Subject</th>
       <th>Level</th>
       <th>Credits</th>
+      <th>Syllabus</th>
       </tr>
   </thead>
   <tbody>
@@ -22,6 +23,7 @@
         <td><%= k.subject %></td>
         <td><%= k.level %></td>
         <td><%= k.credits %></td>
+        <td><%= syllabus(k) %></td>
         </tr>
       <% end %>
   </tbody>

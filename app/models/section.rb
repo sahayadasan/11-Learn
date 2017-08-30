@@ -14,6 +14,6 @@
 #
 
 class Section < ApplicationRecord
-    validates :title, :klass_id, presence: true
+    validates :klass_id, presence: true
     belongs_to :klass
 end

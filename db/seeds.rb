@@ -14,5 +14,7 @@ Registration.create!(klass_id: 1, teacher_id: 2, semester: 'Fall', year: 2017, c
 Registration.create!(klass_id: 3, teacher_id: 2, semester: 'Spring', year: 2018, capacity: 50)
 Registration.create!(klass_id: 5, teacher_id: 2, semester: 'Fall', year: 2018, capacity: 75)
 
-Section.create!(klass_id: 2, title: 'Newtonian Motion', content: 'todo1', azure: 'microsoft1', link: 'youtube1', position: 0)
-Section.create!(klass_id: 2, title: 'Electric Currents', content: 'todo2', azure: 'microsoft2', link: 'youtube1', position: 1)
+Section.create!(klass_id: 2, title: Faker::ElderScrolls.dragon, content: Faker::Lorem.sentences(25).join(' '), azure: 'https://railsclass.blob.core.windows.net/classuploads/3031abdd364639a439ab10c591378275929ddae09e1c2eedb56cfb94a6f04eb136b7f1d36fd421a6cca3c67821e6a661894079af3333ff6aca0ce62bbcea856d/cat.jpg', link: Faker::Placeholdit.image, position: 0)
+Section.create!(klass_id: 2, title: Faker::ElderScrolls.dragon, content: Faker::Lorem.sentences(25).join(' '), azure: 'https://railsclass.blob.core.windows.net/classuploads/3031abdd364639a439ab10c591378275929ddae09e1c2eedb56cfb94a6f04eb136b7f1d36fd421a6cca3c67821e6a661894079af3333ff6aca0ce62bbcea856d/cat.jpg', link: Faker::Placeholdit.image, position: 1)
+Section.create!(klass_id: 2, title: Faker::ElderScrolls.dragon, content: Faker::Lorem.sentences(25).join(' '), azure: 'https://railsclass.blob.core.windows.net/classuploads/3031abdd364639a439ab10c591378275929ddae09e1c2eedb56cfb94a6f04eb136b7f1d36fd421a6cca3c67821e6a661894079af3333ff6aca0ce62bbcea856d/cat.jpg', link: Faker::Placeholdit.image, position: 2)
+Section.create!(klass_id: 2, title: Faker::ElderScrolls.dragon, content: Faker::Lorem.sentences(25).join(' '), azure: 'https://railsclass.blob.core.windows.net/classuploads/3031abdd364639a439ab10c591378275929ddae09e1c2eedb56cfb94a6f04eb136b7f1d36fd421a6cca3c67821e6a661894079af3333ff6aca0ce62bbcea856d/cat.jpg', link: Faker::Placeholdit.image, position: 3)

@@ -29,6 +29,8 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'sidekiq'
+gem 'azure-storage'
 gem 'devise'
 gem 'popper_js'
 gem 'jquery-rails'

@@ -1,7 +1,7 @@
 class CreateSections < ActiveRecord::Migration[5.1]
   def change
     create_table :sections do |t|
-      t.string :title, null: false
+      t.string :title, defaut: 'Untitled'
       t.text :content
       t.string :azure
       t.string :link

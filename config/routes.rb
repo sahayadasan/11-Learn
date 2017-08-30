@@ -13,6 +13,8 @@ Rails.application.routes.draw do
     member do
       get '/sections', to: 'klasses#section_list'
       post '/sections', to: 'klasses#section_create'
+      put '/sections/:section_id/up', to: 'klasses#up', as: 'goup'
+      put '/sections/:section_id/down', to: 'klasses#down', as: 'godown'
     end
   end
 

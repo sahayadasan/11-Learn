@@ -1,8 +1,16 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
-  before_action :get_user
+  before_action :get_user, :log_auth
 
   private
+
+  def log_auth
+    #binding.pry
+    data = {uid: nil, email: nil, role: nil, controller: controller_name, action: action_name, params: request.params.to_h, time: Time.now}
+    data = data.merge({uid: @user.id, email: @user.email, role: @user.role}) if @user
+  
+    ap data
+  end
 
   def get_user
     @user = current_user
